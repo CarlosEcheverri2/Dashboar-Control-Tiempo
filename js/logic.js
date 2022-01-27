@@ -64,11 +64,11 @@ fetch("data.json").then(
         paint(res,ini)
         dataJson = res
     }
-)/*.catch( 
+).catch( 
     (res) => {
         console.log("algo salio mal")
     } 
-)*/
+)
 
 $selector.addEventListener("click",changePaint)
 

@@ -21,7 +21,7 @@ body {
   display: inline-block;
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
   grid-gap: 30px;
 }
 
@@ -145,4 +145,27 @@ body {
   position: absolute;
   top: 5%;
   left: 70%;
+}
+
+@media (max-width: 1260px) {
+  .rejilla {
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(6, 300px);
+  }
+
+  .perfil {
+    height: 130px;
+  }
+
+  .perfil__imagen {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-top: 0;
+  }
+
+  .flex {
+    display: inline-block;
+    font-size: 10px;
+  }
 }
